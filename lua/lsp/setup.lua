@@ -33,18 +33,19 @@ mason.setup({
 mason_config.setup({
   ensure_installed = {
 		"lua_ls",
-    "tsserver",
-    "tailwindcss",
+    -- "tsserver",
+    -- "tailwindcss",
     "bashls",
-    "cssls",
-    "dockerls",
-    "emmet_ls",
-    "html",
-    "jsonls",
-    "pyright",
-    "rust_analyzer",
-    "taplo",
-    "yamlls",
+    -- "cssls",
+    -- "dockerls",
+    -- "emmet_ls",
+    -- "html",
+    -- "jsonls",
+    -- "pyright",
+    -- "rust_analyzer",
+    -- "taplo",
+    -- "yamlls",
+    "remark_ls",
   },
 })
 
@@ -54,7 +55,7 @@ mason_config.setup({
 -- https://github.com/williamboman/nvim-lsp-installer#available-lsps
 local servers = {
   lua_ls = require("lsp.config.lua"), -- lua/lsp/config/lua.lua
-  -- bashls = require("lsp.config.bash"),
+  bashls = require("lsp.config.bash"),
   -- pyright = require("lsp.config.pyright"),
   -- html = require("lsp.config.html"),
   -- cssls = require("lsp.config.css"),

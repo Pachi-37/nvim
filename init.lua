@@ -17,3 +17,6 @@ require("lsp.ui")
 
 -- index line
 require("plugin-config.indent-blankline")
+
+-- autocmd
+require("autocmds")
